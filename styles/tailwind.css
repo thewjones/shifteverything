@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@layer base {
+
+h2 {
+    color:white;
+    @apply mb-20;
+    @apply uppercase;
+}
+
+h2, p {
+    @apply text-xl;
+    line-height:1.5em;
+}
+
+@media screen(lg) {
+    h2, p {
+        @apply text-3xl;
+        line-height:1.5em;
+    }
+}
+
+body {
+@apply bg-white;
+}
+
+p {
+    @apply mb-3;
+    @apply text-berringtonblue;
+}
+
+
+header,
+section {
+    @apply py-20;
+}
+}

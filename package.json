@@ -1,0 +1,52 @@
+{
+  "name": "The Red Lion",
+  "version": "0.0.1",
+  "scripts": {
+    "dev:only": "vite dev",
+    "build:only": "vite build",
+    "tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/app.css -o src/styles/theredlion.css -w",
+    "tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production postcss src/app.css -o src/styles/theredlion.css",
+    "dev": "concurrently \"npm run dev:only\" \"npm run tailwind:watch\"",
+    "build": "npm run tailwind:build && npm run build:only",
+    "package": "vite package",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "@tailwindcss/typography": "^0.5.7",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "autoprefixer": "^10.4.8",
+    "concurrently": "^7.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "^3.50.0",
+    "svelte-check": "^2.9.0",
+    "svelte-intersection-observer": "^0.10.0",
+    "svelte-preprocess": "^4.10.7",
+    "svelte-toc": "^0.2.10",
+    "tailwindcss": "^3.1.8",
+    "tslib": "^2.4.0",
+    "typescript": "~4.8.2",
+    "vite": "next"
+  },
+  "type": "module",
+  "dependencies": {
+    "daisyui": "^2.24.0",
+    "felte": "^1.2.3",
+    "svelte-forms-lib": "^2.0.1",
+    "svelte-preprocess-import-assets": "^0.1.6",
+    "vite-imagetools": "^4.0.8"
+  }
+}
