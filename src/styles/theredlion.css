@@ -1716,6 +1716,40 @@ p {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.alert {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b2, var(--b1)) / var(--tw-bg-opacity));
+  padding: 1rem;
+  border-radius: var(--rounded-box, 1rem);
+}
+.alert > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+@media (min-width: 768px) {
+
+  .alert {
+    flex-direction: row;
+  }
+
+  .alert > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+}
+.alert > :where(*) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 @-webkit-keyframes spin {
 
   from {
@@ -1735,6 +1769,18 @@ p {
   to {
     transform: rotate(360deg);
   }
+}
+.label {
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .input {
   flex-shrink: 1;
@@ -1767,6 +1813,10 @@ p {
   cursor: pointer;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
+}
+.btm-nav>* .label {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 @-webkit-keyframes button-pop {
 
@@ -1823,6 +1873,10 @@ p {
   100% {
     background-position-y: 0;
   }
+}
+.label a:hover {
+  --tw-text-opacity: 1;
+  color: hsl(var(--bc) / var(--tw-text-opacity));
 }
 .input[list]::-webkit-calendar-picker-indicator {
   line-height: 1em;
@@ -1952,6 +2006,9 @@ p {
 .relative {
   position: relative;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -2014,6 +2071,10 @@ p {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -2081,4 +2142,20 @@ aside.toc.mobile button {
   right: 1.25rem;
   height: 2.5rem;
   background-color: transparent;
+}
+
+
+@media (min-width: 1024px) {
+
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .lg\:ml-auto {
+    margin-left: auto;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }

@@ -2,7 +2,7 @@
     export let bgcolour: string, nopadding: boolean, id: string; 
 </script>
 
-<section id="{id}" class="{bgcolour} {(nopadding) ? '' : 'py-24'} flex align-center relative">
+<section id="{id}" class="px-5 {bgcolour} {(nopadding) ? '' : 'py-24'} flex align-center relative">
 	<div>
 		<slot></slot>
 	</div>

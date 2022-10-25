@@ -29,13 +29,14 @@ import IntersectionObserver from "svelte-intersection-observer";
 	<title>Bullitt Cargo Bikes UK - Shift Everything</title>
 
 </svelte:head>
-<header>
-	<div class="max-w-screen-2xl mx-auto flex bg-primary justify-center align-center items-center gap-8">
+
+<header class="px-5">
+	<div class="max-w-screen-2xl mx-auto flex flex-col lg:flex-row bg-primary justify-center align-center items-center gap-8">
 		
 		
-			<img class="mb-4 w-64"  src="{se}" alt="The Red Lion">
+			<img class="mb-4 w-64"  src="{se}" alt="Shift Everything">
 		
-			<img class="mb-4 w-64 ml-auto"  src="{bullitt}" alt="Bullitt">
+			<img class="mb-4 w-64 lg:ml-auto"  src="{bullitt}" alt="Bullitt">
 		
 
 	</div>	
@@ -45,7 +46,7 @@ import IntersectionObserver from "svelte-intersection-observer";
 <div>
 	<Section>
 		<IntersectionObserver {element} bind:intersecting>
-			<img src="{ebullitt}" alt="The Red Lion">
+			<img src="{ebullitt}" alt="Bullitt Bike">
 		</IntersectionObserver>
 	</Section>
 

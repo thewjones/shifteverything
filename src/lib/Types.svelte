@@ -13,32 +13,32 @@ import ItemGrid from '$lib/ItemGrid.svelte';
 
 <ItemGrid>
 
-	<div class="item">
+	<div class="item col-span-3 lg:col-span-1">
 		<img src="{base}"/>
 		<p>A Project Base</p>
 	</div>
 
-	<div class="item">
+	<div class="item col-span-3 lg:col-span-1">
 		<img src="{family}"/>
 		<p>Transport for your family</p>
 	</div>
 
-	<div class="item">
+	<div class="item col-span-3 lg:col-span-1">
 		<img src="{dog}"/>
 		<p>.... and your dog</p>
 	</div>
 
-	<div class="item">
+	<div class="item col-span-3 lg:col-span-1">
 <img src="{electric}"/>
 <p>Power-assist options</p>
 </div>
 
-<div class="item">
+<div class="item col-span-3 lg:col-span-1">
 <img src="{business}"/>
 <p>Decarbonise your business</p>
 </div>
 
-<div class="item">
+<div class="item col-span-3 lg:col-span-1">
 <img src="{tour}"/>
 <p>Tour</p>
 </div>
