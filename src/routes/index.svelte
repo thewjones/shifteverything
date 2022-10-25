@@ -9,9 +9,7 @@ import IntersectionObserver from "svelte-intersection-observer";
 	import Types from '$lib/Types.svelte';
 	import Benefits from '$lib/Benefits.svelte';
 	import FeatureText from '$lib/FeatureText.svelte';
-	import Form from '$lib/Form.svelte';
-
-
+	
 
 	let element;
 	let intersecting;
