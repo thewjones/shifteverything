@@ -2040,6 +2040,9 @@ p {
 .max-w-screen-xl {
   max-width: 1280px;
 }
+.max-w-screen-lg {
+  max-width: 1024px;
+}
 .flex-col {
   flex-direction: column;
 }
@@ -2075,6 +2078,19 @@ p {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.leading-normal {
+  line-height: 1.5;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -2157,5 +2173,10 @@ aside.toc.mobile button {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
